@@ -1,0 +1,78 @@
+section#containar {
+  display: grid;
+  grid-column: auto;
+  grid-row: 1fr 1fr 1fr 1fr 1fr 1fr ;
+ height: 100vmax;
+  background: #dddddd;
+}
+
+#top {
+background: rgb(172, 172, 124);
+    display: grid ;
+   grid-row: 1;
+  grid-auto-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+
+
+#slideShow {
+  display: grid ;
+  grid-row: 2;
+  background: rgb(128, 128, 10);
+  
+  
+}
+
+#sales {
+  display: grid ;
+   grid-row: 3;
+  background: rgb(238, 238, 176);
+  
+}
+
+#discover {
+  display: grid ;
+   grid-row: 4;
+  background: rgb(247, 247, 19);
+  
+}
+
+#footr {
+  display: grid ;
+  grid-row: 6;
+  
+  background: rgb(85, 85, 3);
+}
+.lego{
+  display: grid;
+ grid-column: 1/2;
+ grid-row:1;
+}
+
+#searchBar 
+  {
+   
+   display: grid;
+   grid-column: 2/4;
+   grid-row:1;
+
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .signIn{
+    display: grid;
+   grid-column: 4/5;
+   grid-row:1;
+}
+  
+  
+  .list {
+    display: grid;
+   grid-column: 1/5;
+   grid-row: 2;
+  }
+
