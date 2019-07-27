@@ -1,0 +1,81 @@
+
+        body {
+            font-family: Tahoma, Geneva, sans-serif;
+            color: #fff;
+            /* background: url(slide1.jpeg); */
+            background-size: cover;
+        }
+
+         /* .signin {
+            background: rgba(187, 139, 139);
+            padding: 40px;
+            width: 250px;
+            margin: auto;
+            margin-top: 80px;
+            height: 400px;
+            margin-left: 180px;
+           
+        }  */
+        form{
+            background: rgba(7,40,195,0.8);
+            width: 240px;
+            text-align: center;
+            padding: 40px;
+            width: 250px;
+            margin: auto;
+            margin-top: 80px;
+            height: 400px;
+            margin-left: 180x;
+           
+        }
+        input
+        {
+           padding:10px;
+           border-radius: 15px;
+           border: none;
+         }
+        input[type=button]
+        {
+            width: 150px;
+            background: white;
+            border: none;
+           line-height:15px;
+           border-radius: 15px;
+           cursor: pointer;
+           padding: 5px;
+        }
+        
+        input[type=button]:hover{
+            color:rgb(65, 113, 155);
+            background-color: rgb(175, 140, 140)
+
+        }
+        a{
+            color:yellow;
+            /* text-decoration: blink; */
+            cursor: pointer;
+        }
+        h2{
+            color: white;
+
+        }
+        a:hover{
+            color: skyblue;
+        }
+        
+        ::placeholder{
+            color:rgb(173, 209, 240);
+            opacity: 0.8;
+        } 
+        .register-form child{
+            padding:10px;
+           border-radius: 15px;
+           border: none;
+
+        } 
+        .login-page{
+            display: none;
+        } */
+        /* p{
+            display: none;
+        }
