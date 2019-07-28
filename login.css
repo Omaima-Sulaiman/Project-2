@@ -1,12 +1,13 @@
 
+        
         body {
             font-family: Tahoma, Geneva, sans-serif;
             color: #fff;
-            /* background: url(slide1.jpeg); */
+            background: url(slide1.jpeg);
             background-size: cover;
         }
 
-         /* .signin {
+         .signin {
             background: rgba(187, 139, 139);
             padding: 40px;
             width: 250px;
@@ -15,7 +16,7 @@
             height: 400px;
             margin-left: 180px;
            
-        }  */
+        } 
         form{
             background: rgba(7,40,195,0.8);
             width: 240px;
@@ -60,7 +61,7 @@
 
         }
         a:hover{
-            color: skyblue;
+            color: rgb(34, 174, 230);
         }
         
         ::placeholder{

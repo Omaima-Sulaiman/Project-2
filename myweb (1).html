@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Fashion</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Style the body */
+    body {
+      font-family: Tahoma, Geneva, sans-serif;
+      margin: 0;
+    }
+
+    .contain {
+
+      position: relative
+    }
+
+    /* Header/logo Title */
+    .header {
+      height: 50px;
+      padding: 100px;
+      text-align: center;
+      /* background: #1abc9c; */
+      /* background-image: url("log2.jpeg"); */
+      background-color: rgb(65, 113, 155);
+      /* background-color: rgb(175, 140, 140) */
+      background-size: cover;
+      position: relative;
+      background-repeat: no-repeat, repeat;
+      color: white;
+    }
+
+
+
+    /* Style the top navigation bar */
+    .navbar {
+      overflow: hidden;
+      background-color: rgb(65, 113, 155);
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+
+    /* Style the navigation bar links */
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    /* Right-aligned link */
+    .navbar a.right {
+      float: right;
+
+
+    }
+
+    /* Change color on hover */
+    .navbar a:hover {
+      /* background-color: #ddd; */
+      color: white;
+
+    }
+
+    /* Column container */
+    .row {
+      display: -ms-flexbox;
+      /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap;
+      /* IE10 */
+      flex-wrap: wrap;
+
+    }
+
+    /* Create two unequal columns that sits next to each other */
+    /* Sidebar/left column */
+    .side {
+
+      -ms-flex: 50%;
+      /* IE10 */
+      flex: 5%;
+      /* background-color: #f1f1f1; */
+      padding: 50px;
+      background-color: rgb(65, 113, 155);
+    }
+    .dropbtn {
+  background-color: rgb(204, 231, 241);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border:16px;
+  width: 200px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 16px 16px;
+  text-decoration: none;
+  display: block;
+ 
+}
+
+.dropdown-content a:hover {background-color:rgb(195, 202, 209);}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: rgb(195, 202, 209);}
+
+
+.dropbtn1 {
+  background-color:rgb(204, 231, 241);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  display: block;
+  width: 200px;
+}
+
+.dropdown1 {
+  position: relative;
+  display: block;
+}
+
+.dropdown1-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown1-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown1-content a:hover {background-color:rgb(195, 202, 209);}
+
+.dropdown1:hover .dropdown-content {display: block;}
+
+.dropdown1:hover .dropbtn {background-color: rgb(195, 202, 209);}
+
+
+
+
+.dropbtn2 {
+  background-color:rgb(204, 231, 241);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  display: block;
+  width: 200px;
+}
+
+.dropdown2 {
+  position: relative;
+  display: block;
+}
+
+.dropdown2-content {
+  display: none;
+  position: absolute;
+  background-color: #4f9bf1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown2-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown2-content a:hover {background-color:rgb(45, 135, 224);}
+
+.dropdown2:hover .dropdown-content {display: block;}
+
+.dropdown2:hover .dropbtn {background-color: rgb(140, 187, 233);}
+    /* Main column */
+    .main {
+      -ms-flex: 70%;
+      /* IE10 */
+      flex: 70%;
+      background-color: white;
+      padding: 20px;
+    }
+
+    /* Make the image fully responsive */
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+      /* position:static */
+    }
+
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: auto;
+
+      /* background: #ddd; */
+      background-color: rgb(65, 113, 155);
+      background-repeat: no-repeat, repeat;
+      background-size: cover;
+      margin-left: 380 px;
+    }
+
+
+    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 700px) {
+      .row {
+        flex-direction: column;
+        display: inline-block
+      }
+    }
+
+    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+      .navbar a {
+        float: none;
+        width: 100%;
+      }
+    }
+
+    input[type=text] {
+      width: 300px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: white;
+      background-image: url("search.png");
+      background-position: 10px 10px;
+      background-repeat: no-repeat;
+      padding: 12px 20px 12px 40px;
+      -webkit-transition: width 0.4s ease-in-out;
+      transition: width 0.4s ease-in-out;
+
+    }
+
+    input[type=text]:focus {
+      width: 100%;
+
+    }
+
+    img:hover {
+      animation: shake 0.5s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes shake {
+      0% {
+        transform: translate(1px, 1px) rotate(0deg);
+      }
+
+      10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+      }
+
+      20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+      }
+
+      30% {
+        transform: translate(3px, 2px) rotate(0deg);
+      }
+
+      40% {
+        transform: translate(1px, -1px) rotate(1deg);
+      }
+
+      50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+      }
+
+      60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+      }
+
+      70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+      }
+
+      80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+      }
+
+      90% {
+        transform: translate(1px, 2px) rotate(0deg);
+      }
+
+      100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+      }
+    }
+   .item-image{
+     display: inline;
+     
+   }
+   .shop-item-button{
+     display: inline;
+   }
+
+  </style>
+</head>
+
+<body>
+  <div class="contain">
+    <div class="header">
+      <p style="font-family: 'Courier New', Courier, monospace" font-size="60px">Fashion</p>
+      <p>Doha&omaima.</p>
+    </div>
+
+    <div class="navbar">
+
+      <form>
+        <input type="text" name="search" placeholder="Search.." style="float: center">
+      </form>
+      <button > <a href="file:///home/omaima/Project-2/logeIn.html" class="right" blank="0" >LogIn/SignUp</a></button>
+    </div>
+
+    <div class="row">
+      <div class="side" style="display: block">
+        <div class="dropdown">
+          <button class="dropbtn">Categories</button>
+          <div class="dropdown-content">
+            <a href="#">Dress</a>
+            <a href="#">T-shirt</a>
+            <a href="#">Tunic</a>
+          </div>
+        </div>
+<br> <br> <br>
+        <div class="dropdown1
+">
+  <button class="dropbtn1">New Arrivals</button>
+  <div class="dropdown-content">
+    <a href="#">Dress</a>
+    <a href="#">T-shirt</a>  
+    <a href="#">Tunic</a>
+  </div>
+</div>
+<br> <br> <br>
+<div class="dropdown2
+">
+  <button class="dropbtn2">plus size</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+      </div>
+      <div class="main">
+
+        <div class="fakeim" >
+          <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+              <li data-target="#demo" data-slide-to="3"></li>
+            </ul>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="ss.png" alt="new" width="300" height="300">
+                <div class="carousel-caption">
+
+
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="s1.png" alt="bag" width="300" height="300">
+                <div class="carousel-caption">
+
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="s3.png" alt="suit" width="300" height="300">
+                <div class="carousel-caption">
+
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="s4.png" alt="bag" width="300" height="300">
+                <div class="carousel-caption">
+
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="fakeimg" style="height:500px;"></div>
+        <marquee direction="up" behavior="alternate" style="height:100px">
+          <h1 style="color:rgb(65, 113, 155);">Big sales</h1>
+        </marquee>
+        <img class="item-image" src="p2.png">
+        <div class="item-details">
+            <span class="item-price">$14.99</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div>
+        <img class="item-image" src="p3.jpg">
+        <div class="item-details">
+            <span class="item-price">$14.99</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div>
+        <img class="item-image" src="p4.png">
+        <div class="item-details">
+            <span class="item-price">$14.99</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div><img class="item-image" src="p5.png">
+        <div class="item-details">
+            <span class="item-price">$14.99</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div>
+
+        <!-- <img src="p1.png" alt="p1" width="auto" height="300">
+        <img src="p2.png" alt="p2" width="auto" height="300">
+        <img src="p3.jpg" alt="p3" width="auto" height="300">
+        <img src="p4.png" alt="p4" width="auto" height="300">
+        <img src="p5.png" alt="p5" width="auto" height="300"> -->
+      </div>
+      
+    </div>
+
+    <div class="footer">
+      <a href="#">contact us </a>
+      <p>2019 &#169;</p>
+
+
+    </div>
+  </div>
+</body>
+
+</html>
