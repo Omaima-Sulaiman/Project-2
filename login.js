@@ -9,43 +9,47 @@ $(".login-page #log ").click(function () {
 })
 $(".p").hide();
 
-
-// this function to compare between the current value enter and  the value already exists
 var objpeople = [{
         username: "sami",
         password: "sami"
     }, {
         username: "omaima",
         password: "omaima"
-    }, {
+    },
+    {
+        username: "o",
+        password: "o"
+    },
+    {
         username: "sami",
         password: "sami"
     }
-
 ]
 
-$("#buttonLogin").attr("disabled", true);
 
+// $("#buttonLogin").click(function (){
+//     window.open('myweb.html')})
 
-$("#buttonLogin").click(function () {
-
+// $("#buttonLogin").attr("disabled", true);
+console.log("you are not logged in")
+console.log($("#buttonLogin"))
+$("#buttonLogin").on('click', function () {
     var username = $("#username").val();
     var password = $("#password").val();
-    console.log (objpeople)
-
     for (let i = 0; i < objpeople.length; i++) {
+        if (username === objpeople[i].username && password === objpeople[i].password) {
+            console.log("you are logged in")
+            $("#buttonLogin").attr("disabled", true);
 
-        if (username === objpeople[i] && password === objpeople[i]) {
+            window.open('myweb.html')
+        } else {
+            console.log("you are not logged in")
             $("#buttonLogin").attr("disabled", false);
 
-        } else
-            alert("Error Password or Username")
+        }
 
     }
 })
-
-
-
 
 
 //sign up
@@ -91,33 +95,16 @@ $('#sign-repassword').focusout(function checkRepassword() {
 
 
 });
-//  var userobj = [];
-
-// function pushNewobject(username, password) {
-//   this.username = age;
-//   this.password = rel;
-
-// }
-
-// addBtn.addEventListener("click", pushNewobject);
-
-// function pushNewobject() {
-
-
-//       var  = "ExampleData";
-//       var selectedText = "ExampleData";
-//       var selectedSmoker = "ExampleData";
-
-//       var currentHouseholdMember = new householdMember(selectedAge, selectedText, selectedSmoker);
-//       console.log(currentHouseholdMember);
-//       return householdData.push(currentHouseholdMember);
-
-// };
-
 var userobj = {
-    "username": username,
-    "password": password
+    username: username,
+    password: password
 }
-$("#create").click(function () {
+
+
+$("#create").click(function (username, password) {
+    userobj[username] = username;
+    userobj[password] = password;
+
     objpeople.push(userobj)
+    window.open('myweb.html')
 })

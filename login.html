@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+
+
+<body>
+
+    <div class="sign in">
+        <form id="login">
+            <h2 style="color:white" )>Log In</h2>
+            <input id="username" type="text" name="username" placeholder="username"><br><br>
+            <input id="password" type="password" name="pass" placeholder="password"><br> <br>
+            <a herf=""> <button id="buttonLogin" value="log in">LOG in</button></a><br>
+            <br>
+            <div id="container">
+                <a herf="#" style="margin-right: 0px ;font-size:13px;font-family:Tahoma,Geneva,sans-serif;">Reset
+                    Password/</a>
+                <a herf="#" style="margin-right: 0px ;font-size:13px;font-family:Tahoma,Geneva,sans-serif;">Forget
+                    Password</a>
+            </div><br><br> <br>
+            Dont have account?<a id="signup" heref="#">&nbsp;Sign Up</a>
+        </form>
+        <div class="login-page">
+            <div class="form">
+                <form class="register-form">
+                    <h2 style="color:white" )>Sign Up</h2>
+                    <input id="sign-username" type="text" placeholder="name" />
+                    <p class="p" id="errorUsername">sholud be from 4 to 15 characters </p><br>
+                    <br>
+                    <input id="sign-password" type="password" placeholder="  password" />
+                    <p class="p" id="errorPassword">at least 8 characters </p><br>
+                    <br>
+                    <input id="sign-repassword" type="password" placeholder=" retype password" /><br>
+                    <p class="p" id="errorRepassword">not match </p><br>
+
+                    <input id="sign-email" type="email" placeholder="email " /><br>
+                    <br>
+                    <input id="create" type="button" value="creat"><br>
+                    <p class="message">Already Aegistered?<a id="log" herf="#">login</a></p>
+                </form>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+        <script src="login.js"></script>
+</body>
+
+</html>

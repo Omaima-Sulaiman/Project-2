@@ -12,6 +12,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
 
 
   <style>
@@ -21,7 +22,7 @@
 
     /* Style the body */
     body {
-      font-family: Tahoma, Geneva, sans-serif;
+      font-family: courier;
       margin: 0;
     }
 
@@ -32,18 +33,18 @@
 
     /* Header/logo Title */
     .header {
-      height: 50px;
+      height: 60px;
       padding: 100px;
       text-align: center;
       /* background: #1abc9c; */
-      /* background-image: url("log2.jpeg"); */
-      background-color: rgb(65, 113, 155);
+      background-image: url("cover.png");
+      /* background-color: rgb(65, 113, 155); */
       /* background-color: rgb(175, 140, 140) */
       background-size: cover;
       position: relative;
       background-repeat: no-repeat, repeat;
       color: white;
-    }
+       }
 
 
 
@@ -101,14 +102,30 @@
       padding: 50px;
       background-color: rgb(65, 113, 155);
     }
+
+
+    .button
+{
+  background-color: rgb(5, 76, 143);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border:16px;
+  width: 200px;
+background-color: steelblue;
+}
+
+
+
     .dropbtn {
-  background-color: rgb(204, 231, 241);
+  background-color: rgb(5, 76, 143);
   color: white;
   padding: 16px;
   font-size: 16px;
   border:16px;
   width: 200px;
 }
+
 
 .dropdown {
   position: relative;
@@ -126,33 +143,32 @@
 }
 
 .dropdown-content a {
-  color: black;
+  color: rgb(2, 72, 112);
   padding: 16px 16px;
   text-decoration: none;
   display: block;
  
 }
 
-.dropdown-content a:hover {background-color:rgb(195, 202, 209);}
+.dropdown-content a:hover {background-color:rgba(63, 149, 236, 0.829);}
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: rgb(195, 202, 209);}
-
+.dropdown:hover .dropbtn {background-color: rgba(37, 134, 231, 0.787);}
 
 .dropbtn1 {
-  background-color:rgb(204, 231, 241);
+  background-color: rgb(5, 76, 143);
   color: white;
   padding: 16px;
   font-size: 16px;
-  border: none;
-  display: block;
+  border:16px;
   width: 200px;
 }
 
 .dropdown1 {
   position: relative;
-  display: block;
+  display: inline-block;
+
 }
 
 .dropdown1-content {
@@ -165,57 +181,58 @@
 }
 
 .dropdown1-content a {
-  color: black;
-  padding: 12px 16px;
+  color: rgb(2, 72, 112);
+  padding: 16px 16px;
   text-decoration: none;
   display: block;
+ 
 }
 
-.dropdown1-content a:hover {background-color:rgb(195, 202, 209);}
+.dropdown1-content a:hover {background-color:rgba(63, 149, 236, 0.829);}
 
 .dropdown1:hover .dropdown-content {display: block;}
 
-.dropdown1:hover .dropbtn {background-color: rgb(195, 202, 209);}
-
-
+.dropdown1:hover .dropbtn {background-color: rgba(37, 134, 231, 0.787);}
 
 
 .dropbtn2 {
-  background-color:rgb(204, 231, 241);
+  background-color: rgb(5, 76, 143);
   color: white;
   padding: 16px;
   font-size: 16px;
-  border: none;
-  display: block;
+  border:16px;
   width: 200px;
 }
 
 .dropdown2 {
   position: relative;
-  display: block;
+  display: inline-block;
+
 }
 
 .dropdown2-content {
   display: none;
   position: absolute;
-  background-color: #4f9bf1;
+  background-color: #f1f1f1;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 .dropdown2-content a {
-  color: black;
-  padding: 12px 16px;
+  color: rgb(2, 72, 112);
+  padding: 16px 16px;
   text-decoration: none;
   display: block;
+ 
 }
 
-.dropdown2-content a:hover {background-color:rgb(45, 135, 224);}
+.dropdown2-content a:hover {background-color:rgba(63, 149, 236, 0.829);}
 
 .dropdown2:hover .dropdown-content {display: block;}
 
-.dropdown2:hover .dropbtn {background-color: rgb(140, 187, 233);}
+.dropdown2:hover .dropbtn {background-color: rgba(37, 134, 231, 0.787);}
+
     /* Main column */
     .main {
       -ms-flex: 70%;
@@ -235,7 +252,8 @@
     /* Footer */
     .footer {
       padding: 20px;
-      text-align: auto;
+      text-align: center;
+      text-size-adjust: 50px;
 
       /* background: #ddd; */
       background-color: rgb(65, 113, 155);
@@ -333,21 +351,16 @@
       }
     }
    .item-image{
-     display: inline;
-     
+     display: flex
    }
-   .shop-item-button{
-     display: inline;
-   }
-
+    
   </style>
 </head>
 
 <body>
   <div class="contain">
     <div class="header">
-      <p style="font-family: 'Courier New', Courier, monospace" font-size="60px">Fashion</p>
-      <p>Doha&omaima.</p>
+      
     </div>
 
     <div class="navbar">
@@ -355,7 +368,12 @@
       <form>
         <input type="text" name="search" placeholder="Search.." style="float: center">
       </form>
-      <button > <a href="file:///home/omaima/Project-2/logeIn.html" class="right" blank="0" >LogIn/SignUp</a></button>
+
+   
+      <p style="font-size:30px; color: thistle ;align-self: auto;">Fashion</p>
+       </strong>
+       <a class="btn btn-primary" href="login.html"   target="_blank" role="button">LogIn/SignUp</a>
+      <!-- <button  class="hoosh"> <a href="file:///home/doha/Downloads/logeIn%20(1).html" class="right" target="_blank" >LogIn/SignUp</a></button> -->
     </div>
 
     <div class="row">
@@ -374,7 +392,7 @@
   <button class="dropbtn1">New Arrivals</button>
   <div class="dropdown-content">
     <a href="#">Dress</a>
-    <a href="#">T-shirt</a>  
+    <a href="#">T-shirt</a>
     <a href="#">Tunic</a>
   </div>
 </div>
@@ -383,15 +401,15 @@
 ">
   <button class="dropbtn2">plus size</button>
   <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+    <a href="#">Dress</a>
+    <a href="#">T-shirt</a>
+    <a href="#">Tunic</a>
   </div>
 </div>
       </div>
       <div class="main">
 
-        <div class="fakeim" >
+        <div class="fakeim" style="height:500px;">
           <div id="demo" class="carousel slide" data-ride="carousel">
             <ul class="carousel-indicators">
               <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -435,46 +453,55 @@
           </div>
         </div>
 
-        <div class="fakeimg" style="height:500px;"></div>
+        
+ <div class="row" >
+    <div class="fakeimg" style="height:500px; padding:5px"></div>
         <marquee direction="up" behavior="alternate" style="height:100px">
-          <h1 style="color:rgb(65, 113, 155);">Big sales</h1>
-        </marquee>
-        <img class="item-image" src="p2.png">
-        <div class="item-details">
-            <span class="item-price">$14.99</span>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-        </div>
-        <img class="item-image" src="p3.jpg">
-        <div class="item-details">
-            <span class="item-price">$14.99</span>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-        </div>
-        <img class="item-image" src="p4.png">
-        <div class="item-details">
-            <span class="item-price">$14.99</span>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-        </div><img class="item-image" src="p5.png">
-        <div class="item-details">
-            <span class="item-price">$14.99</span>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-        </div>
+         <h1 style="color:rgb(65, 113, 155);">Big sales</h1>
+       </marquee>
+       
+       <div class="item-details">
+          <img class="item-image" src="p2.png">
+           <span class="item-price">77.99$</span>
+           <button class="btn btn-primary shop-button" type="button">ADD TO CART</button>
+       </div>
+       
+       
+       
+       <div class="item-details">
+          <img class="item-image" src="p4.png">
+           <span class="item-price">44$</span>
+           <button class="btn btn-primary shop-button" type="button">ADD TO CART</button>
+       </div>
+       <div class="item-details">
+          <img class="item-image" src="p5.png">
+           <span class="item-price">34.99$</span>
+           <button class="btn btn-primary shop-button" type="button">ADD TO CART</button>
+       <!-- </div>
+       <div id='total'>
+         <button >total</button>
+         
 
-        <!-- <img src="p1.png" alt="p1" width="auto" height="300">
-        <img src="p2.png" alt="p2" width="auto" height="300">
-        <img src="p3.jpg" alt="p3" width="auto" height="300">
-        <img src="p4.png" alt="p4" width="auto" height="300">
-        <img src="p5.png" alt="p5" width="auto" height="300"> -->
+       </div> -->
       </div>
-      
-    </div>
-
     <div class="footer">
-      <a href="#">contact us </a>
-      <p>2019 &#169;</p>
+      <a href="#"><p style="font-size:24px; color:white;">contact us</p> </a>
+      <p style="font-size:24px; color:white;">2019 &#169;</p>
 
 
     </div>
   </div>
+  <!-- <script>
+  $(document).ready(function () {
+
+    $('shop-button').click(function(){
+      $('item-price')
+
+
+
+
+  }
+  </script> -->
 </body>
 
 </html>
