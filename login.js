@@ -1,4 +1,6 @@
 // sign in
+
+
 $("#login #signup").click(function () {
     $(".login-page").show();
     $("#login").hide();
@@ -27,10 +29,8 @@ var objpeople = [{
 ]
 
 
-// $("#buttonLogin").click(function (){
-//     window.open('myweb.html')})
 
-// $("#buttonLogin").attr("disabled", true);
+
 console.log("you are not logged in")
 console.log($("#buttonLogin"))
 $("#buttonLogin").on('click', function () {
@@ -45,6 +45,7 @@ $("#buttonLogin").on('click', function () {
         } else {
             console.log("you are not logged in")
             $("#buttonLogin").attr("disabled", false);
+            // alert('error username or password')
 
         }
 
@@ -62,13 +63,17 @@ $('#sign-username').focusout(function checkUsername() {
 
         $("#errorUsername").show();
 
-        errorUsername = true;
+        $("#sign-password").attr("disabled", true);
 
-    } else $("#errorUsername").hide();
+    } else{
+        $("#errorUsername").hide();
+        $("#sign-password").attr("disabled", false);
+    }
 
 
 
 });
+
 $('#sign-password').focusout(function checkPassword() {
 
     var passwordLength = $("#sign-password").val().length;
@@ -76,7 +81,9 @@ $('#sign-password').focusout(function checkPassword() {
 
         errorPassword = true;
         $("#errorPassword").show();
-    } else $("#errorPassword").hide();
+        
+    } else 
+    {$("#errorPassword").hide();}
 
 
 });

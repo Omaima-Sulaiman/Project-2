@@ -3,7 +3,7 @@
         body {
             font-family: Tahoma, Geneva, sans-serif;
             color: #fff;
-            background: url(slide1.jpeg);
+            /* background: url(slide1.jpeg); */
             background-size: cover;
         }
 
@@ -77,6 +77,17 @@
         .login-page{
             display: none;
         } */
-        /* p{
+   .p{
             display: none;
+              font:red;
+        }
+        #buttonLogin{
+            width: 150px;
+            background: white;
+            border: none;
+           line-height:15px;
+           border-radius: 15px;
+           cursor: pointer;
+           padding: 5px;
+
         }
